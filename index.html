@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Víctor Montero Cordero | Desarrollo de Apps & Web</title>
+    
+    <meta name="description" content="Víctor Montero Cordero. Desarrollador especializado en aplicaciones móviles y soluciones web modernas.">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="icon" type="image/png" href="icon-192.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">VM</a>
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="pre-title">Ingeniería de Software</p>
+            <h1>Víctor <br> Montero Cordero</h1>
+            <p class="subtitle">Creando experiencias digitales. Especialista en Desarrollo de Apps y Web.</p>
+            <div class="cta-group">
+                <a href="#contacto" class="btn-primary">Iniciar Proyecto</a>
+                <a href="#servicios" class="btn-secondary">Mis Servicios</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicios" class="services">
+        <div class="section-container">
+            <h2>Especialidades</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">📱</div>
+                    <h3>Desarrollo de Apps</h3>
+                    <p>Aplicaciones nativas e híbridas (PWA) enfocadas en rendimiento y experiencia de usuario (UX).</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web modernos, responsivos y escalables utilizando las últimas tecnologías.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">🛠️</div>
+                    <h3>Soluciones a Medida</h3>
+                    <p>Análisis y desarrollo de software personalizado para resolver necesidades específicas de negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="section-container contact-box">
+            <h2>Hablemos de tu próximo gran proyecto.</h2>
+            <p>Estoy listo para escuchar tu idea y convertirla en una solución digital.</p>
+            
+            <div class="contact-methods">
+                <a href="https://wa.me/50672602019?text=Hola%20Victor,%20me%20interesa%20hablar%20sobre%20un%20proyecto." target="_blank" class="contact-btn whatsapp">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="ws-icon">
+                    WhatsApp: +506 72602019
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Víctor Montero Cordero. srvictor.com</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registrado.', reg))
+                    .catch(err => console.warn('Fallo al registrar Service Worker.', err));
+            });
+        }
+    </script>
+</body>
+</html>
